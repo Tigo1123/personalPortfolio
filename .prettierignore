@@ -1,0 +1,14 @@
+node_modules/
+server/node_modules/
+dist/
+public/images/
+public/my_certification/
+public/files/
+migration/original/
+migration/pre-migration.patch
+migration/pre-migration-status.txt
+migration/asset-checksums.txt
+package-lock.json
+server/package-lock.json
+test-results/
+playwright-report/

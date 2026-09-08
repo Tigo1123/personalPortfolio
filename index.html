@@ -2,466 +2,56 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Tageldin Gasmalla | Software Engineering Student</title>
-
-    <!-- Inter Font -->
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
+    <title>
+      Tageldin Gasmalla | Full-Stack Developer &amp; Software Engineering
+      Student
+    </title>
+    <meta
+      name="description"
+      content="Tageldin Gasmalla is a Software Engineering student and Full-Stack Developer in Kigali, building thoughtful web applications with React, JavaScript, Node.js, and SQL."
     />
-
-    <!-- CSS -->
-
-    <link rel="stylesheet" href="./css/style.css" />
+    <meta name="theme-color" content="#F7F7F2" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Tageldin Gasmalla | Full-Stack Developer"
+    />
+    <meta
+      property="og:description"
+      content="Explore my projects, technical skills, certifications, and software engineering journey."
+    />
+    <meta property="og:image" content="%BASE_URL%images/2.jpeg" />
+    <meta property="og:image:alt" content="Tageldin Gasmalla" />
+    <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
+    <script>
+      try {
+        const saved = localStorage.getItem("theme");
+        document.documentElement.dataset.theme = ["light", "dark"].includes(
+          saved,
+        )
+          ? saved
+          : matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+      } catch {
+        document.documentElement.dataset.theme = matchMedia(
+          "(prefers-color-scheme: dark)",
+        ).matches
+          ? "dark"
+          : "light";
+      }
+    </script>
   </head>
-
   <body>
-    <body class="dark-mode"></body>
-    <header class="navbar">
-      <div class="logo">
-        <!-- <span class="logo-mark">TG</span> -->
-
-        <img src="images/2.jpeg" alt="Tageldin Gasmalla" class="logo-avatar" />
-
-        <div class="logo-text">
-          <span>Tageldin</span>
-          <span>Gasmalla</span>
-        </div>
-      </div>
-
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-
-          <li><a href="#about">About</a></li>
-
-          <li><a href="#skills">Skills</a></li>
-
-          <li><a href="#projects">Projects</a></li>
-
-          <li><a href="#certificates">Certificates</a></li>
-
-          <li><a href="#contact">Contact</a></li>
-          <li>
-            <a href="#resume"> Resume </a>
-          </li>
-        </ul>
-      </nav>
-      <button class="menu-toggle">☰</button>
-
-      <button class="theme-toggle">🌙</button>
-    </header>
-    <section class="hero" id="home">
-      <div class="hero-content">
-        <p class="hero-greeting">👋 Welcome! I'm</p>
-
-        <h1>Tageldin Gasmalla</h1>
-
-        <h2>Software Engineering Student</h2>
-
-        <p class="hero-description">
-          I'm a passionate Software Engineering student dedicated to building
-          modern, responsive, and user-focused web applications. I enjoy turning
-          ideas into real-world solutions through clean code, continuous
-          learning, and innovative problem-solving.
-        </p>
-
-        <div class="hero-buttons">
-          <a href="#projects" class="btn primary-btn"> View Projects </a>
-
-          <a href="#contact" class="btn secondary-btn"> Contact Me </a>
-        </div>
-      </div>
-
-      <div class="hero-image">
-        <img
-          src="images/2.jpeg"
-          alt="Tageldin Gasmalla"
-          class="developer-avatar"
-        />
-      </div>
-    </section>
-    <section class="about hidden" id="about">
-      <div class="about-image">
-        <a href="images/1.jpeg" target="_blank">
-          <img
-            src="images/1.jpeg"
-            alt="Tageldin Gasmalla"
-            class="profile-image"
-          />
-        </a>
-      </div>
-
-      <div class="about-content">
-        <p class="section-title">About Me</p>
-
-        <h2>
-          Passionate Software Engineering Student & Aspiring Full-Stack
-          Developer
-        </h2>
-
-        <p>
-          I am a dedicated Software Engineering student with a strong passion
-          for technology, innovation, and continuous learning. I enjoy
-          transforming ideas into practical, user-friendly applications that
-          solve real-world problems. My journey in software development has
-          allowed me to build projects using modern web technologies while
-          strengthening my understanding of programming principles, algorithms,
-          databases, and software design.
-        </p>
-
-        <p>
-          I have experience developing responsive web applications with HTML,
-          CSS, JavaScript, and Git, and I am continuously expanding my knowledge
-          of frontend and backend development. I believe that writing clean,
-          maintainable, and efficient code is just as important as creating
-          beautiful and intuitive user experiences. Every project I build is an
-          opportunity to improve my technical skills, creativity, and attention
-          to detail.
-        </p>
-
-        <p>
-          Beyond coding, I enjoy exploring new technologies, participating in
-          coding challenges, collaborating on team projects, and learning about
-          artificial intelligence and modern software engineering practices. I
-          am always looking for opportunities to grow, contribute to meaningful
-          projects, and learn from experienced developers in collaborative
-          environments.
-        </p>
-
-        <p>
-          My long-term goal is to become a professional Full-Stack Software
-          Engineer who builds scalable, reliable, and impactful software that
-          improves people's lives. I am committed to lifelong learning,
-          embracing new challenges, and using technology to create innovative
-          solutions with real value.
-        </p>
-
-        <div class="about-info">
-          <div>
-            <strong>Education</strong>
-            <span>Software Engineering</span>
-          </div>
-
-          <div>
-            <strong>Focus</strong>
-            <span>Web Development & AI</span>
-          </div>
-
-          <div>
-            <strong>Goal</strong>
-            <span>Become a Professional Software Engineer</span>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="resume" id="resume">
-      <div class="resume-content">
-        <p class="section-title">Resume</p>
-
-        <h2>My Professional Journey</h2>
-
-        <p>
-          I am a Software Engineering student interested in web development,
-          artificial intelligence, and building solutions through technology.
-        </p>
-
-        <div class="resume-info">
-          <div>
-            <h3>Education</h3>
-
-            <p>Software Engineering Student</p>
-          </div>
-
-          <div>
-            <h3>Focus</h3>
-
-            <p>Full Stack Development & AI</p>
-          </div>
-
-          <div>
-            <h3>Goal</h3>
-
-            <p>Become a Professional Software Engineer</p>
-          </div>
-        </div>
-
-        <a
-          href="files/Tageldin_Gasmalla_Modern_CV.pdf"
-          class="btn primary-btn"
-          target="_blank"
-        >
-          View My CV
-        </a>
-      </div>
-    </section>
-    <section class="skills hidden" id="skills">
-      <div class="skills-header">
-        <p class="section-title">Skills</p>
-
-        <h2>Technologies I Work With</h2>
-      </div>
-
-      <div class="skills-container">
-        <div class="skill-card">
-          <div class="skill-icon">💻</div>
-
-          <h3>Frontend</h3>
-
-          <p>HTML, CSS, JavaScript</p>
-        </div>
-
-        <div class="skill-card">
-          <div class="skill-icon">⚙️</div>
-
-          <h3>Backend</h3>
-
-          <p>Node.js, APIs, Databases</p>
-        </div>
-
-        <div class="skill-card">
-          <div class="skill-icon">🛠️</div>
-
-          <h3>Tools</h3>
-
-          <p>Git, GitHub, VS Code</p>
-        </div>
-      </div>
-    </section>
-    <section class="projects hidden" id="projects">
-      <div class="projects-container">
-        <!-- Academic System -->
-
-        <article class="project-card">
-          <div class="project-image">📚</div>
-
-          <div class="project-content">
-            <span class="project-status"> Completed </span>
-            <h3>
-              Academic System <span class="project-category"> Full Stack </span>
-
-              <h3>Academic System</h3>
-            </h3>
-
-            <p>
-              A full-stack academic management system that helps organize
-              students, courses, records, and academic data using modern web
-              technologies.
-            </p>
-
-            <div class="project-tech">
-              <span>React</span>
-              <span>Node.js</span>
-              <span>SQL</span>
-            </div>
-
-            <div class="project-links">
-              <a href="https://github.com/Tigo1123"> GitHub </a>
-
-              <a href="https://github.com/Tigo1123/academic-system">
-                Live Demo
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Guess My Number -->
-
-        <article class="project-card">
-          <div class="project-image">🎯</div>
-
-          <div class="project-content">
-            <span class="project-status"> Completed </span>
-            <h3>
-              Guess My Number <span class="project-category"> Frontend </span>
-
-              <h3>Guess My Number</h3>
-            </h3>
-
-            <p>
-              A JavaScript game where players guess a hidden number with
-              different difficulty levels.
-            </p>
-
-            <div class="project-tech">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-            </div>
-
-            <div class="project-links">
-              <a href="https://github.com/Tigo1123"> GitHub </a>
-
-              <a href="https://tigo1123.github.io/Guess-My-Number/">
-                Live Demo
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Student Planner -->
-
-        <article class="project-card">
-          <div class="project-image">📅</div>
-
-          <div class="project-content">
-            <span class="project-status"> Completed </span>
-            <h3>
-              Student Planner <span class="project-category"> Frontend </span>
-
-              <h3>Student Planner</h3>
-            </h3>
-
-            <p>
-              A productivity application that helps students organize tasks,
-              calendars, and academic events.
-            </p>
-
-            <div class="project-tech">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-            </div>
-
-            <div class="project-links">
-              <a href="https://github.com/Tigo1123" class="project-btn">
-                GitHub
-              </a>
-
-              <a href="#" class="project-btn"> Live Demo </a>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-    <section class="certificates hidden" id="certificates">
-      <div class="certificates-header">
-        <p class="section-title">Certificates</p>
-
-        <h2>My Certifications</h2>
-      </div>
-
-      <div class="certificates-container">
-        <!-- certificate cards here -->
-
-        <!-- Professional Foundation -->
-        <article class="certificate-card">
-          <a href="my_certification/profissonal.png" target="_blank">
-            <img
-              src="my_certification/profissonal.png"
-              alt="Professional Foundation Certificate"
-              class="certificate-image"
-            />
-          </a>
-
-          <div class="certificate-content">
-            <h3>Professional Foundation</h3>
-
-            <p>Professional skills and workplace readiness.</p>
-
-            <span> Certificate </span>
-
-            <a href="my_certification/profissonal.png" class="certificate-btn">
-              View Certificate
-            </a>
-          </div>
-        </article>
-
-        <!-- Programming for Everybody (Python) -->
-
-        <article class="certificate-card">
-          <a href="my_certification/python.png" target="_blank">
-            <img
-              src="my_certification/python.png"
-              alt="Professional Foundation Certificate"
-              class="certificate-image"
-            />
-          </a>
-
-          <div class="certificate-content">
-            <h3>Programming for Everybody (Python)</h3>
-
-            <p>
-              Introduction to programming concepts using Python and
-              problem-solving techniques.
-            </p>
-
-            <span> Python Programming </span>
-            <a href="my_certification/python.png" class="certificate-btn">
-              View Certificate
-            </a>
-          </div>
-        </article>
-
-        <!-- Frontend Developer -->
-
-        <article class="certificate-card">
-          <a href="my_certification/frontend.png" target="_blank">
-            <img
-              src="my_certification/frontend.png"
-              alt="Professional Foundation Certificate"
-              class="certificate-image"
-            />
-          </a>
-
-          <div class="certificate-content">
-            <h3>Frontend Developer</h3>
-
-            <p>
-              Certificate covering frontend development, web technologies, and
-              building user interfaces.
-            </p>
-
-            <span> Web Development </span>
-            <a href="my_certification/frontend.png" class="certificate-btn">
-              View Certificate
-            </a>
-          </div>
-        </article>
-      </div>
-    </section>
-    <section class="contact hidden" id="contact">
-      <div class="contact-header">
-        <p class="section-title">Contact</p>
-
-        <h2>Let's Work Together</h2>
-
-        <p>
-          Whether you're looking for a motivated software engineering student, a
-          collaborative teammate, or a developer passionate about creating
-          impactful solutions, I'd love to hear from you. I'm always open to
-          internship opportunities, freelance projects, open-source
-          contributions, and meaningful collaborations. Feel free to reach out
-          if you'd like to discuss an idea, work on an exciting project, or
-          simply connect. Let's create technology that makes a difference.
-        </p>
-      </div>
-
-      <div class="contact-links">
-        <a
-          href="https://mail.google.com/mail/?view=cm&fs=1&to=al.taj.gsm@gmail.com"
-          target="_blank"
-        >
-          📧 Email
-        </a>
-
-        <a href="https://github.com/Tigo1123"> 💻 GitHub </a>
-
-        <a
-          href="https://www.linkedin.com/in/tageldin-gasmalla-6685a2202?utm_source=share_via&utm_content=profile&utm_medium=member_android"
-        >
-          🔗 LinkedIn
-        </a>
-      </div>
-    </section>
-    <script src="js/script.js"></script>
+    <div id="root"></div>
+    <noscript
+      >Please enable JavaScript to view this portfolio. Contact:
+      al.taj.gsm@gmail.com.
+      <a href="%BASE_URL%files/Tageldin_Gasmalla_Modern_CV.pdf"
+        >View Tageldin’s resume</a
+      >.</noscript
+    >
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
