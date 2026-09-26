@@ -3,55 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Tageldin Gasmalla | Full-Stack Developer &amp; Software Engineering
-      Student
-    </title>
-    <meta
-      name="description"
-      content="Tageldin Gasmalla is a Software Engineering student and Full-Stack Developer in Kigali, building thoughtful web applications with React, JavaScript, Node.js, and SQL."
-    />
-    <meta name="theme-color" content="#F7F7F2" />
+    <meta name="theme-color" content="#111311" />
+    <meta name="description" content="Tageldin Gasmalla is a Software Engineering student and Full Stack Developer building practical web applications and digital products." />
+    <meta property="og:title" content="Tageldin Gasmalla — Full Stack Developer" />
+    <meta property="og:description" content="A Software Engineering student and Full Stack Developer building practical web applications and digital products." />
     <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="Tageldin Gasmalla | Full-Stack Developer"
-    />
-    <meta
-      property="og:description"
-      content="Explore my projects, technical skills, certifications, and software engineering journey."
-    />
-    <meta property="og:image" content="%BASE_URL%images/2.jpeg" />
-    <meta property="og:image:alt" content="Tageldin Gasmalla" />
-    <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
-    <script>
-      try {
-        const saved = localStorage.getItem("theme");
-        document.documentElement.dataset.theme = ["light", "dark"].includes(
-          saved,
-        )
-          ? saved
-          : matchMedia("(prefers-color-scheme: dark)").matches
-            ? "dark"
-            : "light";
-      } catch {
-        document.documentElement.dataset.theme = matchMedia(
-          "(prefers-color-scheme: dark)",
-        ).matches
-          ? "dark"
-          : "light";
-      }
-    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <title>Tageldin Gasmalla — Full Stack Developer</title>
   </head>
   <body>
     <div id="root"></div>
-    <noscript
-      >Please enable JavaScript to view this portfolio. Contact:
-      al.taj.gsm@gmail.com.
-      <a href="%BASE_URL%files/Tageldin_Gasmalla_Modern_CV.pdf"
-        >View Tageldin’s resume</a
-      >.</noscript
-    >
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

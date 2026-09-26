@@ -1,61 +1,11 @@
+import React from "react";
 import SectionHeading from "../components/SectionHeading";
-import { assetUrl } from "../data/profile";
-export default function About() {
-  return (
-    <section className="section container" id="about" tabIndex="-1" data-reveal>
-      <SectionHeading
-        number="01"
-        label="About me"
-        title="A thoughtful approach to building software."
-      />
-      <div className="about-layout">
-        <img
-          className="about-photo"
-          src={assetUrl("images/1.jpeg")}
-          alt="Portrait of Tageldin Gasmalla"
-          width="750"
-          height="1000"
-          loading="lazy"
-        />
-        <div className="about-copy">
-          <p>
-            I’m a Software Engineering student at UNILAK in Kigali, Rwanda,
-            developing my skills across frontend and backend development. I
-            enjoy turning real-world problems into useful applications, with
-            equal care for how they work and how people use them.
-          </p>
-          <p>
-            Through self-directed projects, I’m learning to build with clean
-            code, thoughtful database design, and maintainable architecture. I
-            value collaboration and continuous learning, and I’m working toward
-            becoming a software engineer who builds reliable, meaningful
-            software. Outside my projects, I explore AI, coding challenges, and
-            open-source ideas.
-          </p>
-          <dl className="info-grid">
-            <div>
-              <dt>Education</dt>
-              <dd>
-                Software Engineering · UNILAK
-                <br />
-                2024 – Present
-              </dd>
-            </div>
-            <div>
-              <dt>Focus</dt>
-              <dd>Full-stack development &amp; AI</dd>
-            </div>
-            <div>
-              <dt>Location</dt>
-              <dd>Kigali, Rwanda</dd>
-            </div>
-            <div>
-              <dt>Current goal</dt>
-              <dd>Grow through practical work and collaboration</dd>
-            </div>
-          </dl>
-        </div>
-      </div>
-    </section>
-  );
+import { skillGroups } from "../data/skills";
+
+export function About() {
+  return <section className="section about-section" id="about">
+    <SectionHeading index="01" eyebrow="A LITTLE ABOUT ME" title={<>Thoughtful code.<br/><em>Useful outcomes.</em></>} />
+    <div className="about-grid"><p className="about-lead reveal">I’m a Software Engineering student and Full Stack Developer interested in making practical web applications and digital products.</p><div className="about-copy reveal"><p>I enjoy working across modern web interfaces, APIs, and databases. Each project is a chance to sharpen my engineering skills and make something useful for real people.</p><a href="#contact" className="text-link">A little more about working together <span>↗</span></a></div></div>
+    <div className="skills-wrap" id="skills"><div className="skills-intro"><span className="section-index"><i>03</i> / TOOLS I USE</span><p>A growing toolkit for ideas, interfaces and the systems behind them.</p></div><div className="skills-groups">{skillGroups.map(group => <div className="skill-group reveal" key={group.name}><h3>{group.name}</h3><ul>{group.items.map(item => <li key={item}>{item}</li>)}</ul></div>)}</div></div>
+  </section>;
 }

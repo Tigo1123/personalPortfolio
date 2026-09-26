@@ -1,11 +1,8 @@
-export default function SectionHeading({ number, label, title, children }) {
-  return (
-    <div className="section-heading">
-      <p className="eyebrow">
-        <span>{number} /</span> {label}
-      </p>
-      <h2>{title}</h2>
-      {children && <p className="section-intro">{children}</p>}
-    </div>
-  );
+import React from "react";
+
+export default function SectionHeading({ index, eyebrow, title, intro }) {
+  return <div className="section-heading reveal">
+    <span className="section-index"><i>{index}</i> / {eyebrow}</span>
+    <div className="section-heading__body"><h2>{title}</h2>{intro && <p>{intro}</p>}</div>
+  </div>;
 }
