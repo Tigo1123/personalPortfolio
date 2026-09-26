@@ -16,7 +16,7 @@
 .hero-intro{max-width:410px;margin:0;text-align:left;font-size:13px;line-height:1.85}
 .hero-actions{justify-content:flex-start;margin-top:24px}
 .hero-photo-wrap{position:relative;bottom:auto;left:auto;width:380px;max-width:100%;height:440px;justify-self:center;transform:none;animation:hero-photo-enter 1s .2s both}
-.hero-photo{top:19px;left:35px;width:310px;height:392px;object-position:50% 34%;border-radius:47% 47% 4px 4px;filter:saturate(.82)}
+.hero-photo{top:19px;left:35px;width:310px;height:310px;overflow:hidden;object-fit:cover;object-position:50% 34%;border-radius:50%;filter:saturate(.82)}
 .photo-ring--one{width:380px;height:380px;top:11px}
 .photo-ring--two{width:344px;height:344px;top:29px}
 .photo-caption{right:-17px;bottom:19px;font-size:7px}
@@ -35,7 +35,7 @@
   .hero h1{font-size:clamp(47px,6.25vw,56px);letter-spacing:-.085em}
   .hero-intro{font-size:12px}
   .hero-photo-wrap{width:300px;height:366px}
-  .hero-photo{top:17px;left:27px;width:246px;height:325px}
+  .hero-photo{top:17px;left:27px;width:246px;height:246px}
   .photo-ring--one{width:300px;height:300px;top:8px}
   .photo-ring--two{width:270px;height:270px;top:23px}
   .photo-caption{right:-4px;bottom:11px;font-size:6px}
@@ -56,7 +56,7 @@
   .hero-actions{justify-content:center;gap:9px;margin-top:20px}
   .hero-actions .button{min-height:46px;padding:0 14px;gap:12px;font-size:10px}
   .hero-photo-wrap{width:230px;height:270px;max-width:none;margin:30px auto 7px;flex:none}
-  .hero-photo{top:15px;left:22px;width:186px;height:231px;object-position:50% 34%;border-radius:48% 48% 4px 4px}
+  .hero-photo{top:15px;left:22px;width:186px;height:186px;object-position:50% 34%;border-radius:50%}
   .photo-ring--one{width:230px;height:230px;top:8px}
   .photo-ring--two{width:208px;height:208px;top:19px}
   .photo-caption{right:-38px;bottom:9px;font-size:6px}
