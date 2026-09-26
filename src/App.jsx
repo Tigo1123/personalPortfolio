@@ -4,12 +4,13 @@ import Projects from "./sections/Projects";
 import Certificates from "./sections/Certificates";
 import Contact from "./sections/Contact";
 import { About } from "./sections/About";
+import { assetUrl } from "./utils/assetUrl";
 
 const links = [["About", "about"], ["Projects", "projects"], ["Stack", "skills"], ["Certificates", "certificates"], ["Contact", "contact"]];
 
 function Header({ theme, onThemeToggle }) {
   const [menuOpen, setMenuOpen] = useState(false);
-  return <header className="site-header"><a className="wordmark" href="#home" aria-label="Tageldin Gasmalla, home"><img className="wordmark-photo" src="/assets/profile/tageldin-gasmalla.webp" alt=""/><span>TAGELDIN<br/>GASMALLA</span></a>
+  return <header className="site-header"><a className="wordmark" href="#home" aria-label="Tageldin Gasmalla, home"><img className="wordmark-photo" src={assetUrl("assets/profile/tageldin-gasmalla.webp")} alt=""/><span>TAGELDIN<br/>GASMALLA</span></a>
     <nav className={menuOpen ? "nav nav--open" : "nav"} aria-label="Main navigation">{links.map(([name, id]) => <a key={id} href={`#${id}`} onClick={() => setMenuOpen(false)}>{name}</a>)}</nav>
     <div className="header-actions"><a className="header-cta" href="#contact">Let’s talk <Icon name="arrow" size={14}/></a><button className="icon-button theme-button" onClick={onThemeToggle} aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} theme`}><Icon name={theme === "dark" ? "sun" : "moon"} size={17}/></button><button className="icon-button menu-button" onClick={() => setMenuOpen(!menuOpen)} aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"} aria-expanded={menuOpen}><Icon name={menuOpen ? "close" : "menu"}/></button></div>
   </header>;
@@ -24,12 +25,12 @@ function Hero() {
       <p className="hero-intro">I build practical web applications and thoughtful digital products, working across interfaces, APIs and data.</p>
       <div className="hero-actions"><a className="button button--lime" href="#projects">Explore my work <Icon name="arrow" size={16}/></a><a className="button button--outline" href="#contact">Get in touch <span>↗</span></a></div>
       <a className="book-call-pill" href="mailto:al.taj.gsm@gmail.com?subject=Arrange%20a%20call" aria-label="Book a call with me by email">
-        <img src="/assets/profile/tageldin-gasmalla.webp" alt="" />
+        <img src={assetUrl("assets/profile/tageldin-gasmalla.webp")} alt="" />
         <span>Book a call with me</span>
         <Icon name="arrow" size={15}/>
       </a>
     </div>
-    <div className="hero-photo-wrap"><span className="photo-ring photo-ring--one"/><span className="photo-ring photo-ring--two"/><img className="hero-photo" src="/assets/profile/tageldin-gasmalla.webp" alt="Portrait of Tageldin Gasmalla" fetchPriority="high"/><span className="photo-caption"><span>FOCUSED ON</span><b>USEFUL SOFTWARE</b></span><span className="hero-spark" aria-hidden="true">✳</span></div>
+    <div className="hero-photo-wrap"><span className="photo-ring photo-ring--one"/><span className="photo-ring photo-ring--two"/><img className="hero-photo" src={assetUrl("assets/profile/tageldin-gasmalla.webp")} alt="Portrait of Tageldin Gasmalla" fetchPriority="high"/><span className="photo-caption"><span>FOCUSED ON</span><b>USEFUL SOFTWARE</b></span><span className="hero-spark" aria-hidden="true">✳</span></div>
     <a className="scroll-cue" href="#about"><span>SCROLL TO EXPLORE</span><Icon name="chevron" size={15}/></a>
     <div className="hero-side-note">SELECTED WORK<br/>AND A FEW THOUGHTS</div>
   </div><div className="hero-bottom"><span>INDEPENDENT DEVELOPER</span><span>OPEN TO WHAT’S NEXT <i>↘</i></span><span>2026 — PORTFOLIO</span></div></section>;

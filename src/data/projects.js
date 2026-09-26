@@ -1,10 +1,12 @@
+import { assetUrl } from "../utils/assetUrl";
+
 export const projects = [
   {
     number: "01",
     name: "Al-Shifa Healthcare Management System",
     category: "Healthcare · Management",
     description: "A clinic management system connecting patient care with appointments, staff workflows, laboratory, pharmacy and billing in one place.",
-    image: "/assets/projects/al-shifa.webp",
+    image: assetUrl("assets/projects/al-shifa.webp"),
     alt: "Al-Shifa healthcare management landing page in Arabic, showing connected clinic services",
     technologies: ["React", "Vite", "JavaScript", "Node.js", "REST API", "PostgreSQL"],
     status: "Live",
@@ -16,7 +18,7 @@ export const projects = [
     name: "Guess My Number",
     category: "Game · JavaScript",
     description: "A number guessing game with difficulty levels, multiple game modes, live score feedback and a history of guesses.",
-    image: "/assets/projects/guess-my-number.webp",
+    image: assetUrl("assets/projects/guess-my-number.webp"),
     alt: "Guess My Number game screen with difficulty and game mode controls, score and guess history",
     technologies: ["JavaScript", "HTML", "CSS"],
     status: "Live",
@@ -28,7 +30,7 @@ export const projects = [
     name: "Student Planner",
     category: "Productivity · Web app",
     description: "A student workspace for organizing study tasks, school events and daily priorities, with planning tools behind a sign-in experience.",
-    image: "/assets/projects/student-planner.webp",
+    image: assetUrl("assets/projects/student-planner.webp"),
     alt: "Student Planner sign-in page with study planning introduction",
     technologies: ["React", "JavaScript", "REST API"],
     status: "Live",

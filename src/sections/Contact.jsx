@@ -1,5 +1,6 @@
 import React from "react";
 import Icon from "../components/Icon";
+import { assetUrl } from "../utils/assetUrl";
 
 const emailAddress = "al.taj.gsm@gmail.com";
 
@@ -17,7 +18,7 @@ function handleSubmit(event) {
 export default function Contact() {
   return <section className="section contact-section" id="contact">
     <a className="contact-brand-pill reveal" href="#home" aria-label="Tageldin Gasmalla, back to home">
-      <img src="/assets/profile/tageldin-gasmalla.webp" alt="" loading="lazy" />
+      <img src={assetUrl("assets/profile/tageldin-gasmalla.webp")} alt="" loading="lazy" />
       <span className="contact-brand-pill__name">TAGELDIN GASMALLA</span>
       <span className="contact-brand-pill__role">FULL STACK DEVELOPER</span>
     </a>
@@ -47,7 +48,7 @@ export default function Contact() {
       </div>
 
       <div className="contact-photo-panel reveal">
-        <img src="/assets/profile/tageldin-contact.webp" alt="Tageldin Gasmalla in a warm studio portrait" loading="lazy" decoding="async" />
+        <img src={assetUrl("assets/profile/tageldin-contact.webp")} alt="Tageldin Gasmalla in a warm studio portrait" loading="lazy" decoding="async" />
         <span className="contact-photo-caption"><span>TAGELDIN GASMALLA</span><i>FULL STACK DEVELOPER</i></span>
       </div>
     </div>
